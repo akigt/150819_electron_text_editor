@@ -1,5 +1,7 @@
-var app = require('app');	// アプリケーション作成用モジュールをロード
-var BrowserWindow = require('browser-window');
+'use strict';
+const electron = require("electron");
+const app = electron.app;	// アプリケーション作成用モジュールをロード
+const BrowserWindow = electron.BrowserWindow;
 
 //	クラッシュレポート
 require('crash-reporter').start();
